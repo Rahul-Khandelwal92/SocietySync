@@ -65,3 +65,29 @@ Managing maintenance and utility requests in residential communities (like build
    ```
 
 5. Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## 📸 Screenshots
+
+*Coming soon*
+
+---
+
+## ⚖️ Tradeoffs & Design Decisions
+
+| Decision | What I chose | What I gave up | Why |
+|----------|-------------|----------------|-----|
+| **AI auto-categorization over manual forms** | Natural language input → AI routes the ticket | User control over categorization | Residents shouldn't need to know if their issue is "Plumbing" or "Civil" — the AI removes that cognitive burden |
+| **Role-based views over a unified dashboard** | Separate UX for Resident / Provider / Admin | Single shared interface | Each role has fundamentally different jobs to do; forcing one view would create noise and hide critical actions |
+| **4-hour SLA threshold over configurable SLAs** | Fixed 4-hour breach alert | Per-category or per-community custom SLAs | For an MVP, a sensible default creates immediate value without the complexity of configuration |
+| **Mocked backend over real DB** | React Context API for state | Persistent data, multi-user sessions | Allowed rapid prototyping of the full role-based flow without backend infrastructure overhead |
+| **Mobile-first UI over desktop-first** | Clean, accessible single-column layout | Data-dense admin tables | Residents and service providers are almost always on mobile when they raise or action a request |
+
+---
+
+## 💡 What I Learned
+
+- **Role-based products are really 3 products in one.** The resident experience, provider experience, and admin experience each had their own jobs-to-be-done — conflating them early would have killed usability for all three.
+- **AI works best when it removes a decision the user didn't want to make.** Nobody wants to think about ticket categories — the AI handling that is genuinely invisible and valuable.
+- **SLA visibility is an accountability mechanism, not just a metric.** Showing the admin which tickets are breaching changes behaviour — it creates urgency without enforcement.
