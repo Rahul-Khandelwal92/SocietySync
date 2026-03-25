@@ -3,7 +3,7 @@
 ## 📖 Case Study
 
 ### Context
-Managing maintenance and utility requests in residential communities (like apartment complexes or housing societies) is often a disjointed process. Residents rely on WhatsApp groups or phone calls, service providers (plumbers, electricians, security) lack a centralized task list, and Resident Welfare Associations (RWAs) or administrators struggle to track resolution times and hold providers accountable.
+Managing maintenance and utility requests in residential communities (like builder floors, RWA, apartment complexes) is often a disjointed process. Residents rely on WhatsApp groups or phone calls, service providers (plumbers, electricians, security) lack a centralized task list, and Resident Welfare Associations (RWAs) or administrators struggle to track resolution times and hold providers accountable. This is unlike housing societies where there are facility management service companies to do this.
 
 ### The Problem
 1. **Friction in Reporting:** Residents often don't know how to properly categorize their issues or assign the correct priority, leading to misrouted requests.
